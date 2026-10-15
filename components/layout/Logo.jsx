@@ -12,7 +12,7 @@ export function Logo({
         style={{ width: iconSize, height: iconSize }}
       >
         <Image
-          src="/logo.png"
+          src="/logo.jpg"
           alt="Zenova"
           fill
           sizes={`${iconSize}px`}
