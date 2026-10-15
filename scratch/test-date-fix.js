@@ -48,7 +48,6 @@ async function test() {
         },
     });
     console.log("Upsert SUCCESS:", result);
-    // Now run upsert AGAIN on the exact same date to test updating existing record
     const updateResult = await prisma.materialRate.upsert({
         where: {
             materialId_purityId_rateDate: {

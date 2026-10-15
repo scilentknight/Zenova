@@ -12,7 +12,7 @@ async function testFix() {
         shortDescription: "Short desc",
         fullDescription: "<p>Full desc</p>",
         costPrice: null,
-        price: null, // sent by toPayload when price input is empty
+        price: null,
         compareAtPrice: null,
         discountType: null,
         discountValue: null,

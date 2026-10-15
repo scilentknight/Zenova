@@ -7,7 +7,7 @@ export default function Loading() {
 
         {/* Inner static N */}
         <div className="absolute text-[#9d363d] font-serif text-2xl font-bold italic tracking-widest animate-pulse">
-          N
+          Z
         </div>
       </div>
       <p className="mt-6 text-[#9d363d] font-serif tracking-widest uppercase text-sm animate-pulse">

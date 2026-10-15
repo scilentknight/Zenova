@@ -72,7 +72,7 @@ async function verifyAll() {
         shortDescription: "Elegant handmade nosepin",
         fullDescription: "<p>Crafted with pure gold and precision finish.</p>",
         costPrice: null,
-        price: null, // Jewellery product - price derived from materials
+        price: null,
         compareAtPrice: null,
         discountType: null,
         discountValue: null,

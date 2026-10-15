@@ -2,5 +2,5 @@ C:\xampp\htdocs\ecommerce\ecommerce-flow-chart.jpeg base on this flow chart make
 
 1. use prisma orm
 2. tailwind css, hmlt, custom css, js and ts for ui
-3. color combination shoud this company logo C:\xampp\htdocs\ecommerce\nosepinhouse-logo.png also keep this name
+3. color combination shoud this company logo C:\xampp\htdocs\ecommerce\zenova-logo.png also keep this name
 4. web application should be full responsiveness
