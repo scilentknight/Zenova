@@ -9,7 +9,7 @@ function SlideMedia({ slide, priority }) {
   return (
     <Image
       src={slide.image}
-      alt={slide.title || "NOSEPIN jewellery"}
+      alt={slide.title || "Zenova jewellery"}
       fill
       priority={priority}
       sizes="100vw"
@@ -45,7 +45,10 @@ export function HeroCarousel({ slides }) {
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {slides.map((slide, i) => (
-          <div key={slide.id} className="relative h-full w-full shrink-0 grow-0 basis-full">
+          <div
+            key={slide.id}
+            className="relative h-full w-full shrink-0 grow-0 basis-full"
+          >
             <SlideMedia slide={slide} priority={i === 0} />
           </div>
         ))}
@@ -55,7 +58,7 @@ export function HeroCarousel({ slides }) {
 
       <div className="absolute inset-x-0 bottom-0 z-10 mx-auto max-w-7xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8 lg:pb-20">
         <p className="text-[11px] font-medium uppercase tracking-[0.28em] text-[#e7d49a]">
-          NOSEPIN HOUSE · Kathmandu
+          Zenova HOUSE · Kathmandu
         </p>
         <h1 className="mt-3 max-w-xl font-serif text-3xl leading-tight text-white sm:text-5xl">
           {current.title || "Jewellery made to be worn"}
@@ -81,7 +84,13 @@ export function HeroCarousel({ slides }) {
             aria-label="Previous slide"
             className="absolute left-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center border border-white/30 text-white sm:flex"
           >
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={1.6}>
+            <svg
+              viewBox="0 0 24 24"
+              className="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.6}
+            >
               <path d="M15 6l-6 6 6 6" />
             </svg>
           </button>
@@ -91,7 +100,13 @@ export function HeroCarousel({ slides }) {
             aria-label="Next slide"
             className="absolute right-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center border border-white/30 text-white sm:flex"
           >
-            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={1.6}>
+            <svg
+              viewBox="0 0 24 24"
+              className="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={1.6}
+            >
               <path d="M9 6l6 6-6 6" />
             </svg>
           </button>

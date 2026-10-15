@@ -1,4 +1,4 @@
-// Prisma schema for the NOSEPIN HOUSE e-commerce platform
+// Prisma schema for the Zenova HOUSE e-commerce platform
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
@@ -778,7 +778,7 @@ model EmailSettings {
   smtpUser     String?
   smtpPassword String?
   secure       Boolean  @default(false)
-  fromName     String   @default("NOSEPIN HOUSE")
+  fromName     String   @default("Zenova HOUSE")
   fromEmail    String?
   updatedAt    DateTime @updatedAt
 }
@@ -799,7 +799,7 @@ model PaymentSettings {
 
 model InvoiceSettings {
   id            String   @id @default("singleton")
-  companyName   String   @default("NOSEPIN HOUSE")
+  companyName   String   @default("Zenova HOUSE")
   addressLine1  String?
   addressLine2  String?
   phone         String?

@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="relative min-h-[620px] overflow-hidden lg:min-h-[700px]">
         <Image
           src="/images/about/about-hero.jpeg"
-          alt="NOSEPINHOUSE jewellery collection"
+          alt="ZenovaHOUSE jewellery collection"
           fill
           priority
           sizes="100vw"
@@ -21,7 +21,7 @@ export default function AboutPage() {
         <div className="relative mx-auto flex min-h-[620px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:min-h-[700px] lg:px-12">
           <div className="max-w-2xl text-white">
             <p className="mb-5 text-sm font-medium uppercase tracking-[0.35em] text-secondary-300">
-              The Story Behind NOSEPINHOUSE
+              The Story Behind ZenovaHOUSE
             </p>
 
             <h1 className="font-serif text-5xl leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
@@ -32,7 +32,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="mt-7 max-w-xl text-base leading-8 text-primary-50/90 sm:text-lg">
-              At NOSEPINHOUSE, we believe jewellery is more than something
+              At ZenovaHOUSE, we believe jewellery is more than something
               beautiful to wear. It is a reflection of personality, a keeper of
               memories, and a small detail that can make an ordinary moment feel
               extraordinary.
@@ -58,7 +58,7 @@ export default function AboutPage() {
       <section className="bg-background py-20 sm:py-28">
         <div className="mx-auto max-w-4xl px-6 text-center sm:px-8">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-secondary-600">
-            About NOSEPINHOUSE
+            About ZenovaHOUSE
           </p>
 
           <h2 className="font-serif text-4xl leading-tight text-primary-800 sm:text-5xl">
@@ -68,7 +68,7 @@ export default function AboutPage() {
 
           <div className="mx-auto mt-7 max-w-3xl space-y-5 text-base leading-8 text-primary-700/75 sm:text-lg">
             <p>
-              NOSEPINHOUSE was created with a simple idea: beautiful jewellery
+              ZenovaHOUSE was created with a simple idea: beautiful jewellery
               should feel personal. Every piece should complement the person
               wearing it, whether it is chosen for a celebration, a special
               occasion, or simply because it makes you feel beautiful.
@@ -97,7 +97,7 @@ export default function AboutPage() {
               {/* 1536 × 1024 pixels. (w x h) */}
               <Image
                 src="/images/about/about-story.png"
-                alt="NOSEPINHOUSE jewellery craftsmanship"
+                alt="ZenovaHOUSE jewellery craftsmanship"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -136,7 +136,7 @@ export default function AboutPage() {
 
               <p>
                 Whether it becomes part of your everyday style or accompanies
-                you on an unforgettable occasion, we want every NOSEPINHOUSE
+                you on an unforgettable occasion, we want every ZenovaHOUSE
                 piece to become part of your story.
               </p>
             </div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-5 leading-7 text-primary-700/70">
-              Every part of NOSEPINHOUSE is guided by the values that shape the
+              Every part of ZenovaHOUSE is guided by the values that shape the
               way we design, curate, and serve our customers.
             </p>
           </div>
@@ -229,7 +229,7 @@ export default function AboutPage() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:px-12">
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-secondary-300">
-              The NOSEPINHOUSE Standard
+              The ZenovaHOUSE Standard
             </p>
 
             <h2 className="font-serif text-4xl leading-tight sm:text-5xl">
@@ -264,7 +264,7 @@ export default function AboutPage() {
             <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/images/about/about-detail-1.jpg"
-                alt="NOSEPINHOUSE jewellery detail"
+                alt="ZenovaHOUSE jewellery detail"
                 fill
                 sizes="25vw"
                 className="object-cover"
@@ -274,7 +274,7 @@ export default function AboutPage() {
             <div className="relative mt-12 aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/images/about/about-detail-2.jpg"
-                alt="NOSEPINHOUSE jewellery detail"
+                alt="ZenovaHOUSE jewellery detail"
                 fill
                 sizes="25vw"
                 className="object-cover"
@@ -351,7 +351,7 @@ export default function AboutPage() {
         </h2>
 
         <p className="mx-auto mt-6 max-w-xl leading-7 text-primary-700/70">
-          Explore the NOSEPINHOUSE collection and discover jewellery made to
+          Explore the ZenovaHOUSE collection and discover jewellery made to
           become part of your everyday moments and special memories.
         </p>
 

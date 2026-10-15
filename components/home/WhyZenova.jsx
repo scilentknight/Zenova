@@ -1,11 +1,23 @@
 const TRUST_ITEMS = [
-  { title: "Genuine stones", text: "Natural diamonds, SGL certified. No lab-grown mix on the tray." },
-  { title: "Hallmarked gold", text: "BIS-marked pieces, weighed and billed the way a jeweller should." },
-  { title: "Pay at the door", text: "Cash on delivery across Nepal, or settle online if you prefer." },
-  { title: "Bring it back", text: "Returns are handled at the counter — not a maze of tickets." },
+  {
+    title: "Genuine stones",
+    text: "Natural diamonds, SGL certified. No lab-grown mix on the tray.",
+  },
+  {
+    title: "Hallmarked gold",
+    text: "BIS-marked pieces, weighed and billed the way a jeweller should.",
+  },
+  {
+    title: "Pay at the door",
+    text: "Cash on delivery across Nepal, or settle online if you prefer.",
+  },
+  {
+    title: "Bring it back",
+    text: "Returns are handled at the counter — not a maze of tickets.",
+  },
 ];
 
-export default function WhyNosepin() {
+export default function WhyZenova() {
   return (
     <section className="w-full bg-[#381c19] py-14 text-[#fbf6ee] sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -18,8 +30,12 @@ export default function WhyNosepin() {
         <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {TRUST_ITEMS.map((item) => (
             <div key={item.title} className="border-t border-[#ba8b30]/40 pt-4">
-              <h3 className="font-serif text-lg text-[#e7d49a]">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#eadbd6]">{item.text}</p>
+              <h3 className="font-serif text-lg text-[#e7d49a]">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#eadbd6]">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>

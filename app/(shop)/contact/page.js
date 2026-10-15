@@ -44,7 +44,7 @@ export default function ContactPage() {
           {/* Contact Details */}
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-secondary-600">
-              Contact NOSEPINHOUSE
+              Contact ZenovaHOUSE
             </p>
 
             <h2 className="font-serif text-4xl leading-tight text-primary-800 sm:text-5xl">
@@ -83,7 +83,7 @@ export default function ContactPage() {
 
               {/* Email */}
               <a
-                href="mailto:nosepinhouse2068@gmail.com"
+                href="mailto:Zenovahouse2068@gmail.com"
                 className="group flex items-start gap-4"
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-secondary-100 text-secondary-600 transition-colors group-hover:bg-secondary-200">
@@ -96,7 +96,7 @@ export default function ContactPage() {
                   </p>
 
                   <p className="mt-1 text-base text-primary-800 transition-colors group-hover:text-secondary-600">
-                    nosepinhouse2068@gmail.com
+                    Zenovahouse2068@gmail.com
                   </p>
                 </div>
               </a>
@@ -147,16 +147,16 @@ export default function ContactPage() {
             {/* Social */}
             <div className="mt-10 border-t border-primary-200/70 pt-8">
               <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-secondary-600">
-                Follow NOSEPINHOUSE
+                Follow ZenovaHOUSE
               </p>
 
               <div className="flex gap-3">
                 {/* Instagram */}
                 <a
-                  href="https://www.instagram.com/nosepinhouse1"
+                  href="https://www.instagram.com/Zenovahouse1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Follow NOSEPINHOUSE on Instagram"
+                  aria-label="Follow ZenovaHOUSE on Instagram"
                   className="flex h-11 w-11 items-center justify-center rounded-full border border-secondary-300 text-primary-700 transition-all hover:border-secondary-500 hover:bg-secondary-500 hover:text-white"
                 >
                   <FaInstagram size={18} />
@@ -164,10 +164,10 @@ export default function ContactPage() {
 
                 {/* Facebook */}
                 <a
-                  href="https://www.facebook.com/NosePinHouse/"
+                  href="https://www.facebook.com/ZenovaHouse/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Follow NOSEPINHOUSE on Facebook"
+                  aria-label="Follow ZenovaHOUSE on Facebook"
                   className="flex h-11 w-11 items-center justify-center rounded-full border border-secondary-300 text-primary-700 transition-all hover:border-secondary-500 hover:bg-secondary-500 hover:text-white"
                 >
                   <FaFacebookF size={17} />
@@ -178,7 +178,7 @@ export default function ContactPage() {
                   href="https://wa.me/9861435554"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Chat with NOSEPINHOUSE on WhatsApp"
+                  aria-label="Chat with ZenovaHOUSE on WhatsApp"
                   className="flex h-11 w-11 items-center justify-center rounded-full border border-secondary-300 text-primary-700 transition-all hover:border-secondary-500 hover:bg-secondary-500 hover:text-white"
                 >
                   <FaWhatsapp size={19} />
@@ -391,7 +391,7 @@ export default function ContactPage() {
 
             {/* Support */}
             <a
-              href="mailto:hello@nosepinhouse.com"
+              href="mailto:hello@Zenovahouse.com"
               className="group border border-secondary-200/70 bg-background p-8 text-left transition-all hover:-translate-y-1 hover:shadow-soft-lg"
             >
               <Mail
@@ -424,7 +424,7 @@ export default function ContactPage() {
       {/* Bottom CTA */}
       <section className="bg-background px-6 py-24 text-center sm:px-8 sm:py-28">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-secondary-600">
-          NOSEPINHOUSE
+          ZenovaHOUSE
         </p>
 
         <h2 className="mx-auto max-w-2xl font-serif text-4xl leading-tight text-primary-800 sm:text-5xl">

@@ -3,25 +3,31 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { Button } from "@/components/ui/Button";
 import { formatPrice } from "@/lib/format";
-export default async function OrderSuccessPage({ params, }) {
-    const { orderNumber } = await params;
-    const order = await prisma.order.findUnique({
-        where: { orderNumber },
-        include: { items: true },
-    });
-    if (!order)
-        notFound();
-    return (<div className="mx-auto max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
+export default async function OrderSuccessPage({ params }) {
+  const { orderNumber } = await params;
+  const order = await prisma.order.findUnique({
+    where: { orderNumber },
+    include: { items: true },
+  });
+  if (!order) notFound();
+  return (
+    <div className="mx-auto max-w-2xl px-4 py-16 text-center sm:px-6 lg:px-8">
       <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-accent-50 text-accent-600 shadow-soft">
-        <svg viewBox="0 0 24 24" className="h-9 w-9" fill="none" stroke="currentColor" strokeWidth={2}>
-          <path d="M5 13l4 4L19 7"/>
+        <svg
+          viewBox="0 0 24 24"
+          className="h-9 w-9"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M5 13l4 4L19 7" />
         </svg>
       </div>
       <h1 className="mt-6 text-3xl font-bold tracking-tight text-gray-900">
         Order Placed Successfully!
       </h1>
       <p className="mt-2 text-gray-500">
-        Thank you for shopping with Nosepin House. A confirmation has been sent
+        Thank you for shopping with Zenova House. A confirmation has been sent
         for order{" "}
         <span className="font-semibold text-gray-800">{order.orderNumber}</span>
         .
@@ -56,5 +62,6 @@ export default async function OrderSuccessPage({ params, }) {
           </Button>
         </Link>
       </div>
-    </div>);
+    </div>
+  );
 }

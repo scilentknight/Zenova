@@ -5,7 +5,7 @@ export default function Loading() {
         {/* Outer spinning ring */}
         <div className="w-24 h-24 border-4 border-[#9d363d]/20 border-t-[#9d363d] rounded-full animate-spin"></div>
 
-        {/* Inner static N */}
+        {/* Inner static Z */}
         <div className="absolute text-[#9d363d] font-serif text-2xl font-bold italic tracking-widest animate-pulse">
           Z
         </div>

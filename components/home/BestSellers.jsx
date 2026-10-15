@@ -17,7 +17,8 @@ export default function Bestsellers({ products }) {
               Pieces going out the door
             </h2>
             <p className="mt-2 max-w-xl text-sm text-[#6f625d]">
-              Recent jewellery on the floor — nosepins, earrings, and sets people actually buy.
+              Recent jewellery on the floor — Zenovas, earrings, and sets people
+              actually buy.
             </p>
           </div>
           <Link

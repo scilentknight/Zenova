@@ -39,7 +39,7 @@
 //         Welcome back
 //       </h1>
 //       <p className="mt-2 text-center text-sm text-gray-500">
-//         Log in to continue to NOSEPIN HOUSE
+//         Log in to continue to Zenova HOUSE
 //       </p>
 //       <div className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 shadow-soft">
 //         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
@@ -103,60 +103,89 @@ import { Input } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/layout/Logo";
 function LoginForm() {
-    const router = useRouter();
-    const searchParams = useSearchParams();
-    const callbackUrl = searchParams.get("callbackUrl") || "/";
-    const [formError, setFormError] = useState(null);
-    const [showPassword, setShowPassword] = useState(false);
-    const { register, handleSubmit, formState: { errors, isSubmitting }, } = useForm({ resolver: zodResolver(loginSchema) });
-    async function onSubmit(values) {
-        setFormError(null);
-        const result = await signIn("credentials", {
-            ...values,
-            redirect: false,
-        });
-        if (result?.error) {
-            if (result.error !== "CredentialsSignin" && result.error !== "Default") {
-                setFormError(result.error);
-            }
-            else {
-                setFormError("Invalid email or password");
-            }
-            return;
-        }
-        router.push(callbackUrl);
-        router.refresh();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const callbackUrl = searchParams.get("callbackUrl") || "/";
+  const [formError, setFormError] = useState(null);
+  const [showPassword, setShowPassword] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm({ resolver: zodResolver(loginSchema) });
+  async function onSubmit(values) {
+    setFormError(null);
+    const result = await signIn("credentials", {
+      ...values,
+      redirect: false,
+    });
+    if (result?.error) {
+      if (result.error !== "CredentialsSignin" && result.error !== "Default") {
+        setFormError(result.error);
+      } else {
+        setFormError("Invalid email or password");
+      }
+      return;
     }
-    return (<div className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center px-4 py-12">
-      <Logo showText={false} iconSize={88} className="mx-auto"/>
+    router.push(callbackUrl);
+    router.refresh();
+  }
+  return (
+    <div className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center px-4 py-12">
+      <Logo showText={false} iconSize={88} className="mx-auto" />
 
       <h1 className="mt-1 text-center text-2xl font-bold tracking-tight text-gray-900">
         Welcome back
       </h1>
 
       <p className="mt-2 text-center text-sm text-gray-500">
-        Log in to continue to NOSEPIN HOUSE
+        Log in to continue to Zenova HOUSE
       </p>
 
       <div className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 shadow-soft">
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
-          <Input label="Email" type="email" autoComplete="email" error={errors.email?.message} {...register("email")}/>
+          <Input
+            label="Email"
+            type="email"
+            autoComplete="email"
+            error={errors.email?.message}
+            {...register("email")}
+          />
 
           <div className="flex flex-col gap-1.5">
             <div className="relative">
-              <Input label="Password" type={showPassword ? "text" : "password"} autoComplete="current-password" error={errors.password?.message} className="pr-10" {...register("password")}/>
+              <Input
+                label="Password"
+                type={showPassword ? "text" : "password"}
+                autoComplete="current-password"
+                error={errors.password?.message}
+                className="pr-10"
+                {...register("password")}
+              />
 
-              <button type="button" onClick={() => setShowPassword((prev) => !prev)} className="absolute right-3 top-[38px] text-gray-500 transition-colors hover:text-gray-700" aria-label={showPassword ? "Hide password" : "Show password"}>
-                {showPassword ? (<EyeOff className="h-5 w-5"/>) : (<Eye className="h-5 w-5"/>)}
+              <button
+                type="button"
+                onClick={() => setShowPassword((prev) => !prev)}
+                className="absolute right-3 top-[38px] text-gray-500 transition-colors hover:text-gray-700"
+                aria-label={showPassword ? "Hide password" : "Show password"}
+              >
+                {showPassword ? (
+                  <EyeOff className="h-5 w-5" />
+                ) : (
+                  <Eye className="h-5 w-5" />
+                )}
               </button>
             </div>
 
-            <Link href="/forgot-password" className="self-end text-xs font-medium text-primary-600 hover:underline">
+            <Link
+              href="/forgot-password"
+              className="self-end text-xs font-medium text-primary-600 hover:underline"
+            >
               Forgot password?
             </Link>
           </div>
 
-          {formError && (<p className="text-sm text-red-600">{formError}</p>)}
+          {formError && <p className="text-sm text-red-600">{formError}</p>}
 
           <Button type="submit" size="lg" isLoading={isSubmitting}>
             Log In
@@ -166,14 +195,20 @@ function LoginForm() {
 
       <p className="mt-6 text-center text-sm text-gray-500">
         Don&apos;t have an account?{" "}
-        <Link href="/register" className="font-medium text-primary-600 hover:underline">
+        <Link
+          href="/register"
+          className="font-medium text-primary-600 hover:underline"
+        >
           Create one
         </Link>
       </p>
-    </div>);
+    </div>
+  );
 }
 export default function LoginPage() {
-    return (<Suspense>
+  return (
+    <Suspense>
       <LoginForm />
-    </Suspense>);
+    </Suspense>
+  );
 }

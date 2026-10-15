@@ -22,12 +22,12 @@ async function testAddProduct() {
   }
   const categoryId = categories[0].id;
   const sampleFrontendBody = {
-    name: "Test Nosepin Gold Ring",
-    slug: "test-nosepin-gold-ring",
+    name: "Test Zenova Gold Ring",
+    slug: "test-Zenova-gold-ring",
     sku: "",
     categoryId: String(categoryId),
     brandId: null,
-    shortDescription: "A beautiful nosepin",
+    shortDescription: "A beautiful Zenova",
     fullDescription: "<p>Full description here</p>",
     costPrice: null,
     price: null,
